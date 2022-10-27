@@ -1,7 +1,7 @@
 
-!$FONTNAME = "Verdana"
+!$FONTNAME = "Open Sans"
 !$FONTSIZE = 50
 
 skinparam header {
-  attributeFontSize $FONTSIZE
+  FontSize $FONTSIZE
 }
