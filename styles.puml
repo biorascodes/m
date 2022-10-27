@@ -5,57 +5,7 @@
 !endif
 
 !if (%not(%variable_exists("$FONTSIZE")))
-!$FONTSIZE = 11
-!endif
-
-!ifdef DARKBLUE
-skinparam backgroundColor 777
-!$ACCENT = "1a66c2"
-!$ACCENTDARK = "002642"
-skinparam stereotypeCBackgroundColor $ACCENT
-!define DARKSTYLE
-!endif
-
-!ifdef LIGHTBLUE
-!$ACCENT = "2a86e2"
-!$ACCENTDARK = "1a66c2"
-skinparam stereotypeCBackgroundColor $ACCENTDARK
-!define LIGHTSTYLE
-!endif
-
-!ifdef DARKRED
-!$ACCENT = "880000"
-!$ACCENTDARK = "330000"
-skinparam stereotypeCBackgroundColor $ACCENT
-!define DARKSTYLE
-!endif
-
-!ifdef LIGHTRED
-!$ACCENT = "CC0033"
-!$ACCENTDARK = "AA0033"
-skinparam stereotypeCBackgroundColor $ACCENTDARK
-!define LIGHTSTYLE
-!endif
-
-!ifdef DARKGREEN
-!$ACCENT = "228811"
-!$ACCENTDARK = "113300"
-skinparam stereotypeCBackgroundColor $ACCENT
-!define DARKSTYLE
-!endif
-
-!ifdef LIGHTGREEN
-!$ACCENT = "55BB33"
-!$ACCENTDARK = "338822"
-skinparam stereotypeCBackgroundColor $ACCENTDARK
-!define LIGHTSTYLE
-!endif
-
-!ifdef DARKORANGE
-!$ACCENT = "BB6600"
-!$ACCENTDARK = "662200"
-skinparam stereotypeCBackgroundColor $ACCENT
-!define DARKSTYLE
+!$FONTSIZE = 20
 !endif
 
 !ifdef LIGHTORANGE
@@ -136,29 +86,6 @@ skinparam class {
   attributeFontSize $FONTSIZE
   attributeIconSize $FONTSIZE
 }
-
-' Sequence diagrams
-
-skinparam actor {
-  accent_style()
-  font_style()
-}
-
-skinparam participant {
-  basic_style()
-  font_style()
-}
-
-skinparam collections {
-  basic_style()
-  font_style()
-}
-
-skinparam SequenceBox{
-  light_style()
-  font_style()
-}
-
 ' Component diagrams
 
 skinparam interface {
@@ -222,46 +149,4 @@ skinparam entity {
   accent_style()
   font_style()
 }
-
-' State diagrams
-
-skinparam state {
-  basic_style()
-  font_style()
-  arrow_style()
-  startColor $ACCENT
-  endColor $ACCENTDARK
-}
-
-' Object diagrams
-
-skinparam object {
-  basic_style()
-  font_style()
-  arrow_style()
-}
-
-' Common
-
-skinparam note {
-  accent_style()
-  font_style()
-}
-
-skinparam cloud {
-  basic_style()
-  font_style()
-  arrow_style()
-}
-
-skinparam rectangle {
-  basic_style()
-  font_style()
-}
-
-skinparam storage {
-  basic_style()
-  font_style()
-}
-
 @enduml
