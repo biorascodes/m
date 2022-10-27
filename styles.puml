@@ -8,10 +8,6 @@
 !$FONTSIZE = 20
 !endif
 
-!ifdef LIGHTORANGE
-!$ACCENT = "FF8800"
-!$ACCENTDARK = "BB6600"
-skinparam stereotypeCBackgroundColor $ACCENT
 !define LIGHTSTYLE
 !endif
 
@@ -57,11 +53,6 @@ skinparam backgroundColor 777
   borderColor $LIGHTBORDERCOLOR
 !endprocedure
 
-!procedure accent_style()
-  backgroundColor $ACCENT
-  borderColor $ACCENTDARK
-!endprocedure
-
 !procedure arrow_style()
   arrowColor $ARROWCOLOR
   arrowFontName $FONTNAME
@@ -72,7 +63,7 @@ skinparam backgroundColor 777
 ' Class diagrams
 
 skinparam circledCharacter {
-  radius 8
+  radius 10
   fontSize $FONTSIZE
   fontName $FONTNAME
 }
