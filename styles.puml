@@ -2,7 +2,7 @@
 @startuml
 
 !if (%not(%variable_exists("$FONTNAME")))
-!$FONTNAME = "Utopia"
+!$FONTNAME = "Deja Vu Sans"
 !endif
 
 !if (%not(%variable_exists("$FONTSIZE")))
