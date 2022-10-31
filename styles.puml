@@ -2,7 +2,7 @@
 @startuml
 
 !if (%not(%variable_exists("$FONTNAME")))
-!$FONTNAME = "VL PGothic"
+!$FONTNAME = "Verdana"
 !endif
 
 !if (%not(%variable_exists("$FONTSIZE")))
